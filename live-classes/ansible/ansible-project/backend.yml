@@ -50,12 +50,12 @@
         name: mysql
         state: installed  
 
-    - name: Install Python MySQL Client
-      ansible.builtin.pip:
-        name:
-          - PyMySQL
-          - cryptography
-        executable: pip3.9      
+    # - name: Install Python MySQL Client
+    #   ansible.builtin.pip:
+    #     name:
+    #       - PyMySQL
+    #       - cryptography
+    #     executable: pip3.9      
 
     - name: Load Schema
       community.mysql.mysql_db:
@@ -64,7 +64,7 @@
         target: /app/schema/backend.sql
         login_user: root
         login_password: ExpenseApp@1
-        login_host: 172.31.18.254
+        login_host: 172.31.16.122
 
     - name: Start Backend Service
       ansible.builtin.systemd_service:
