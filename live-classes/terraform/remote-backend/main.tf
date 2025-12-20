@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "aws-learning-demo-bucket "
+    bucket = "aws-learning-demo-bucket"
     key    = "suvajit/mytffiles/terraform.tfstate"
     region = "ap-south-1" 
     
