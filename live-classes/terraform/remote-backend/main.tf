@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     bucket = "aws-learning-demo-bucket "
     key    = "suvajit/mytffiles/terraform.tfstate"
-    region = "us-east-1" 
+    region = "ap-south-1" 
     
     use_lockfile = true
 
@@ -21,11 +21,11 @@ terraform {
 
 # Provider Block
 provider "aws" {
-  region  = "us-east-1"
+  region  = "ap-south-1"
 }
 
 
 resource "aws_instance" "ec2demo" {
-  ami           = "ami-0533f2ba8a1995cf9"
+  # ami           = "ami-0533f2ba8a1995cf9"
   instance_type = "t2.micro"
 }
