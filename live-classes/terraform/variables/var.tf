@@ -33,6 +33,12 @@ output "z_x" {
     value = var.z_map["x"]
 }
 
+variable "env" {}
+
+output "env" {
+    value = var.env
+}
+
 
 
 
