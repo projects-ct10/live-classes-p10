@@ -39,6 +39,12 @@ output "env" {
     value = var.env
 }
 
+variable "Name" {}
+
+output "Name" {
+    value = var.Name
+}
+
 
 
 
