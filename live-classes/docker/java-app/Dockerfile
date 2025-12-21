@@ -1,5 +1,5 @@
 # stable official Java runtime base image
-FROM openjdk:17-jdk-alpine
+FROM openjdk:26-ea-17-slim
 
 # metadata
 LABEL maintainer="Akas Patranobis"
