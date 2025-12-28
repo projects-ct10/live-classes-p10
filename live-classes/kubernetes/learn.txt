@@ -52,6 +52,13 @@ Namespace : A sechuled box inside your cluster. (2 clustomers - A,B)
 kubectl --> command line for kubernetes ( kubectl apply -f abc.yaml)
 
 
+===================================================================
+Do apply this tag to all your AWS EKS subnets:
+kubernetes.io/cluster/<your-eks-clustername> shared
+
+example:
+kubernetes.io/cluster/my-eks-cluster shared
+kubernetes.io/role/elb 1
 
 ==================================
 
